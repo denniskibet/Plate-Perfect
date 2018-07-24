@@ -1,0 +1,118 @@
+*{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+.landing-page {
+    height: 100vh;
+    width: 100vw;
+    background: #213d0c;
+}
+
+div.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4.375em;
+    width: 100%;
+}
+
+.logo{
+    float: left;
+    height: 40px;
+    width: auto;
+    padding-left: 5%;
+    padding-top: .8em;    
+}
+
+.menu-icon {
+    float: right;
+    height: 30px;
+    width: auto;
+    padding-right: 5%;
+    padding-top: 1.25em;
+}
+
+.landing-content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#social-media {
+    width: 8%;
+    height: auto;
+    display: inherit;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#social-media a img {
+    max-width: 23px;
+    height: auto;
+   
+}
+
+div.intro {
+    width: 46%;
+    height: auto;
+}
+
+div.intro p.title {
+    font-family: "Prata Regular", serif;
+    font-size: 8.25em;
+    color: #fff;
+}
+
+div.intro p.description {
+    font-family: "Source Sans Pro";
+    font-size: 2.25em;
+    color: #97b97e;
+}
+
+.order-now p {
+    width: 9.166em;
+    text-decoration: none;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #3e671f;
+    border: 2px solid #fff;
+    padding: 1.2em 1em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.landing-img {
+    width: 46%;
+    height: auto;
+}
+
+.landing-img img {
+    height: 50em;
+    width: auto;
+    border-radius: 50%;
+}
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    color: #97b97e;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.5em;
+    margin-top: -3em;
+    text-align: center;
+}
+
+.arrow-down {
+    border: #97b97e 3px;
+    border-style: solid solid none none;
+    transform: rotate(135deg);
+    height: 1.5em;
+    width: 1.5em;
+    background-color: rgba(0,0,0,0);
+}
