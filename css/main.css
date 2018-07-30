@@ -3,6 +3,8 @@
     padding: 0;
     margin: 0;
 }
+
+/* landing page */
 .landing-page {
     height: 100vh;
     width: 100vw;
@@ -22,7 +24,8 @@ div.header {
     height: 40px;
     width: auto;
     padding-left: 5%;
-    padding-top: .8em;    
+    padding-top: .8em;
+    /* z-index: 1000; */
 }
 
 .menu-icon {
@@ -45,19 +48,41 @@ div.header {
 #social-media {
     width: 8%;
     height: auto;
-    display: inherit;
-    flex-direction: column;
-    justify-items: center;
+    align-self: flex-end;
+    /* display: inherit;
+    flex-direction: column; */
+    /* justify-items: center; */
+
 }
 
 #social-media a img {
-    max-width: 23px;
-    height: auto;
-   
+    display: block;
+    padding: 1.5em 2em;
+    margin: 0 auto;
+}
+/* 
+#social-media a img #facebook {
+    /* max-width: 1em
+    height: .5em;
+} */
+
+#facebook {
+    max-height: 2em;
+    width: auto;
+}
+
+#twitter {
+    max-height: 1.5em;
+    width: auto;
+}
+
+#instagram {
+    max-height: 1.5em;
+    width: auto;
 }
 
 div.intro {
-    width: 46%;
+    width: 50%;
     height: auto;
 }
 
@@ -88,12 +113,12 @@ div.intro p.description {
 }
 
 .landing-img {
-    width: 46%;
+    width: 42%;
     height: auto;
 }
 
 .landing-img img {
-    height: 50em;
+    height: 40em;
     width: auto;
     border-radius: 50%;
 }
@@ -116,3 +141,5 @@ div.intro p.description {
     width: 1.5em;
     background-color: rgba(0,0,0,0);
 }
+
+/* meal */
