@@ -6,7 +6,8 @@
     <title>Plate Perfect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
-
+    <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
 </head>
 <body>
     <div class="landing-page">
@@ -40,6 +41,28 @@
             <!-- <p class="text">MENU</p> -->
         </div>
     </div> <!--end of landing page-->
+
+    <!-- meal page -->
+    <div class="food-order">
+        <div class="left-arrow">
+            <button class="arrow left"></button>
+        </div>
+        <div class="food-image">
+            <img src="./img/meal2.jpg" alt="meal 1">
+        </div>
+        <div class="food-details">
+            <h2 class="food-name">Pasta Tomato with Nuts</h2>
+            <p class="food-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolores iusto quasi numquam excepturi fuga saepe ipsa officiis iure, nobis voluptatum sunt cum sint, modi reprehenderit cupiditate nisi harum eveniet amet, repellendus ea. Omnis ipsa non neque ad excepturi, fugiat alias voluptatem deserunt facilis tempora?</p>
+            <p id="quantity">plates left: </p>
+            <form action="" class="order-size">
+                <input type="number" name="amount" id="amount" min="1" max="10" step="1">
+            </form>
+            <button id="make-order" type="submit">Get Some</button>
+        </div>
+        <div class="arrows right-arrow">
+            <button class="arrow right"></button>
+        </div>
+    </div>
 
     <script src="./js/scrollreveal.js"></script>
     <script src="./js/main.js"></script>    
