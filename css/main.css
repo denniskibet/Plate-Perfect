@@ -55,7 +55,7 @@ div.header {
     animation-iteration-count: 1;
 }
 #social-media {
-    opacity: 0;
+    opacity: 1;
     width: 8%;
     height: auto;
     align-self: flex-end;
@@ -67,10 +67,10 @@ div.header {
 
 #social-media a img {
     display: block;
-    padding: 1.5em 2em;
-    width: 2em;
-    height: 1.5em;
-    margin: 0 auto;
+    padding: 1em 0 1em 2em;
+    width: 4em;
+    height: 4em;
+    /* margin: 0 auto; */
     border: none;
     transition: border .5s;
     transition-timing-function: ease-out;
@@ -82,21 +82,22 @@ div.header {
 } */
 #social-media a img:hover {
     border: solid white;
-    border-width: 1px 0 1px 0 ;
+    border-width: 3px 0 3px 0 ;
 }
 #facebook {
-    max-height: 2em;
-    width: auto;
+    height: 2em;
+    width: 2em;
+    opacity: 1;
 }
 
 #twitter {
-    max-height: 1.5em;
+    height: 1.5em;
     width: auto;
 }
 
 #instagram {
-    max-height: 1.5em;
-    width: auto;
+    height: 1.5em;
+    width: 2em;
 }
 
 div.intro {
@@ -185,15 +186,23 @@ a.order-now p:hover {
     to{opacity: 1;}
 }
 
-/* meal */
-.food-order {
+/* end of landing page css */
+
+/* meal pages */
+.food-order.current {
     display: flex;
     flex-direction: row;
     align-items: center;
     height: 100vh;
     width: 100vw;
+}
+.food-order {display:none;}
+.meal-1 {
     background: #fdca6c;
-    
+}
+.meal-2 {
+    background: #48a837;
+    display: none;
 }
 
 .left-arrow {
@@ -201,6 +210,7 @@ a.order-now p:hover {
     justify-content: center;
     width: 10em;
     height: auto;
+    
 }
 
 button.arrow.left {
@@ -211,6 +221,26 @@ button.arrow.left {
     transform: rotate(-45deg);
     background: none;
     /* margin-left: 4em; */
+    opacity: 0;
+    animation: pulse 2s linear infinite;
+}
+
+.right-arrow {
+    display: inherit;
+    justify-content: center;
+    width: 10em;
+    height: auto;
+}
+
+button.right {
+    height: 2.5em;
+    width: 2.5em;
+    border: solid #fff;
+    border-width: 5px 5px 0 0;
+    transform: rotate(45deg);
+    background: none;
+    opacity: 0;
+    animation: pulse 1.5s linear infinite;
 }
 
 .food-image {
@@ -240,11 +270,16 @@ h2.food-name {
 
 p.food-description {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5em;
-    color: #3ab03d;
+    font-size: 1.5em;    
     text-align: justify;
     margin-top: 1em;
     width: 30em;
+}
+.meal-1 div.food-details p.food-description {
+    color: #3ab03d;
+}
+.meal-2 div.food-details p.food-description {
+    color: #46447c;
 }
 
 p#quantity {
@@ -261,28 +296,63 @@ p#quantity {
     margin-top: 1em;
 }
 
-#make-order {
+.make-order {
     width: 13.75em;
     height: 4.5em;
     margin-top: 1.5em;
-    color: #fff;
-    background-color: #3ab03d;
+    color: #fff;    
     border: 2px solid #fff;
     text-transform: uppercase;
-}
-.right-arrow {
-    display: inherit;
-    justify-content: center;
-    width: 10em;
-    height: auto;
-   
+    transition: background-color 2s ease, font-size 1s ease;
+    -moz-transition: background-color 2s ease, font-size 1s ease;
 }
 
-button.right {
-    height: 2.5em;
-    width: 2.5em;
-    border: solid #fff;
-    border-width: 5px 5px 0 0;
-    transform: rotate(45deg);
-    background: none;
+
+.make-order:hover {
+    font-size: 1.1em;
 }
+
+.meal-1 .make-order {
+    background-color: #3ab03d;
+}
+
+.meal-2 .make-order {
+    background-color: #46447c;
+}
+
+/* animations and transitions for the meal page */
+/* @keyframes pulse {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    25%{
+        width: .5em;
+        height: .5em;
+
+    }
+    50% {
+        width: 1em;
+        height: 1em;
+    }
+    75% {
+        width: 1.75em;
+        height: 1.75em;
+    }
+    100% {
+        width: 2.5em;
+        height: 2.5em;
+    }
+} */
+
+@keyframes pulse {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+
+/* end of meal page css */
+
