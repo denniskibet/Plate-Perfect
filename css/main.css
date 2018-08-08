@@ -381,3 +381,104 @@ p#quantity {
 }
 
 /* end of meal page css */
+
+/* the people */
+
+.the-people {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    background-color: #e5ca37;
+    align-items: center;
+}
+
+.people-description {
+    height: auto;
+    width: 50%;
+    margin: 2em;
+    text-align: center;
+}
+
+.people-description h2,
+h3.staff-name {
+    font-family: 'Prata Regular', serif;
+    color: #fff;
+}
+
+.people-description h2.title {
+    font-size: 5em;
+    margin-bottom: 1em;
+}
+
+.people-description h2.thanks {
+    font-size: 3em;
+    margin-top: 1em;
+}
+
+.people-description p.story {
+    width: 80%;
+    color: #674fa6;
+    font-size: 2.25em;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
+    margin-left: 10%;
+}
+
+.staff {
+    width: 50%;
+    height: auto;
+    display: inherit;
+    flex-direction: column;
+}
+
+.person {
+    display: inherit;
+    flex-direction: row;
+    align-items: center;
+}
+
+aside.left img {
+    border-radius: 50%;
+    margin-top: .5em;
+    margin-right: 1.5em;
+}
+
+aside.right h3.staff-name {
+    font-size: 3em;
+}
+
+aside.right p.does {
+    color: #674fa6;
+    font-size: 2em;
+}
+
+/* end the people */
+
+/* inquiries */
+.enquiries {
+    height: 100vh;
+    width: 100%;
+    background-color: #d3b291;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.enquiries h2.intro {
+    color:#fff;
+    font-family: 'Prata Regular', serif;
+    font-size: 5em;
+   
+}
+
+.enquiries h3.details {
+    color: #866b4f;
+    font-size: 2.5em;
+    margin-top: 1em;
+    text-align: center;
+}
+.enquiries h3.details span {
+    font-size: 1em;
+}
