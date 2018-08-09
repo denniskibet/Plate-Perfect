@@ -1,5 +1,5 @@
 window.sr = ScrollReveal({
-    reset: true,
+    reset: false,
     scale: 1.0,
     opacity: 0
 });
@@ -8,6 +8,61 @@ sr.reveal('.fade-in', {
     duration: 2000,
     origin: 'left',
     distance: '50px'
+});
+
+// people page
+sr.reveal('.people-description h2.title', {
+    duration: 1500,
+    origin: 'top',
+    distance: '900px'
+}).reveal('.people-description p.story', {
+    duration: 2000,
+    origin: 'left',
+    distance: '600px',
+    delay: 1500
+}).reveal('.people-description h2.thanks', {
+    duration: 2500,
+    origin: 'bottom',
+    distance: '600px',
+    delay: 1500
+}).reveal('.person', {
+    duration: 2000,
+    delay: 1500,
+    distance: '600px',
+    origin: 'right'
+});
+
+
+// enquiries page
+sr.reveal('.enquiries h2.intro', {
+    duration: 2000,
+    origin: 'left',
+    distance: '600px'
+}).reveal('#email', {
+    duration: 1500,
+    delay: 1500,
+    distance: '600px',
+    origin: 'left'
+}).reveal('#telephone', {
+    duration: 1000,
+    delay: 2500,
+    distance: '200px',
+    origin: 'bottom'
+}).reveal('#filler-text', {
+    duration: 1000,
+    delay: 3000,
+    distance: '200px',
+    origin: 'bottom'
+}).reveal('#address', {
+    duration: 1000,
+    delay: 3500,
+    distance: '200px',
+    origin: 'bottom'
+}).reveal('#bid', {
+    duration: 1000,
+    delay: 4000,
+    distance: '200px',
+    origin: 'bottom'
 });
 revealMeal();
 // meal page
@@ -45,6 +100,8 @@ function revealMeal() {
         origin: 'bottom',
         distance: '900px'
     });
+
+
 }
 
 

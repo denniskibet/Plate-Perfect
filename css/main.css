@@ -440,6 +440,8 @@ h3.staff-name {
 
 aside.left img {
     border-radius: 50%;
+    height: 15em;
+    width: auto;
     margin-top: .5em;
     margin-right: 1.5em;
 }
